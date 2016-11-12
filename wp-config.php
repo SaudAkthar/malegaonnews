@@ -53,10 +53,9 @@ define('AUTH_SALT',        'X4aZ3|V_45y)}q^koD:b`A5||u0Q}d]BI|xBo;vUy]#!HHi93[c$
 define('SECURE_AUTH_SALT', '-CH)7+vR+_lR7K|X]ZMMcY;n2xqerig@+qscI8DG=?x&K!+7K])ugT4w+ip##hxV');
 define('LOGGED_IN_SALT',   '{|&q5Ib=SA}95$RwIxQj#9>Ia($%D[LNj-Ecd34./s(>wxI~ NV}yw7u6Yh]EN<!');
 define('NONCE_SALT',       '$N!}>v9B*>0eI[lI2i2M+NPy)#+O{{jZJVHd:|2[pCgvMDueF+Y~;%n71GDb=:*|');
-/**
-*define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
-*define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
-*/
+define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
+define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
+
 /**#@-*/
 
 /**
@@ -84,7 +83,7 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 define('WP_ALLOW_REPAIR', true);
 
