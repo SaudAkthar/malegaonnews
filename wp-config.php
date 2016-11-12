@@ -53,9 +53,10 @@ define('AUTH_SALT',        '`-Z!2~hE&y9o=[RD9T3:27S/z-}&CC=0u#P_J/T0Q[Z{!eQ%k_:.
 define('SECURE_AUTH_SALT', 'UrSYPK*~]ED=%x|+1>8~a[8YeM5U&[SmQh+1c?XHZD^]5[#2-$;M~$dw]QTK!N_|');
 define('LOGGED_IN_SALT',   '[}X?GH1}(`L%O[qms6!voSe=>0i-BL0Uf2jISxT`WxgJynR:///@<*!:qICQkb3&');
 define('NONCE_SALT',       '(X?)F$B>-*ZX8[#y,eVi}]ct[<v.90c!lW+Fg!d<>N5rpG-`~8QRhx^cst  f9/4');
-define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
-define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
-
+/**
+*define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
+*define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
+*/
 /**#@-*/
 
 /**
