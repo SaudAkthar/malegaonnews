@@ -15,20 +15,20 @@
  */
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["postgres://nlwrhgqstudyuz:bNAwzn5POFki4QyOw7rKvkKNQU@ec2-54-243-245-58.compute-1.amazonaws.com:5432/d65nvp2oe861r5"]);
+$db = parse_url($_ENV["postgres://slswwdrxnkgorm:D5a6mSKls3wjgNofE7y8F2CVdD@ec2-54-243-200-37.compute-1.amazonaws.com:5432/dacea8l2orn05v"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('d65nvp2oe861r5', trim($db["path"],"/"));
+define('dacea8l2orn05v', trim($db["path"],"/"));
 
 /** MySQL database username */
-define('nlwrhgqstudyuz', $db["user"]);
+define('slswwdrxnkgorm', $db["user"]);
 
 /** MySQL database password */
-define('bNAwzn5POFki4QyOw7rKvkKNQU', $db["pass"]);
+define('D5a6mSKls3wjgNofE7y8F2CVdD', $db["pass"]);
 
 /** MySQL hostname */
-define('ec2-54-243-245-58.compute-1.amazonaws.com', $db["host"]);
+define('ec2-54-243-200-37.compute-1.amazonaws.com', $db["host"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
