@@ -19,16 +19,16 @@ $db = parse_url($_ENV["postgres://slswwdrxnkgorm:D5a6mSKls3wjgNofE7y8F2CVdD@ec2-
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('dacea8l2orn05v', trim($db["path"],"/"));
+define('DB_NAME', trim($db["dacea8l2orn05v"],"/"));
 
 /** MySQL database username */
-define('slswwdrxnkgorm', $db["user"]);
+define('DB_USER', $db["slswwdrxnkgorm"]);
 
 /** MySQL database password */
-define('D5a6mSKls3wjgNofE7y8F2CVdD', $db["pass"]);
+define('DB_PASSWORD', $db["D5a6mSKls3wjgNofE7y8F2CVdD"]);
 
 /** MySQL hostname */
-define('ec2-54-243-200-37.compute-1.amazonaws.com', $db["host"]);
+define('DB_HOST', $db["ec2-54-243-200-37.compute-1.amazonaws.com"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
