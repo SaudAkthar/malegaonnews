@@ -15,20 +15,20 @@
  */
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url($_ENV["postgres://nlwrhgqstudyuz:bNAwzn5POFki4QyOw7rKvkKNQU@ec2-54-243-245-58.compute-1.amazonaws.com:5432/d65nvp2oe861r5"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('d65nvp2oe861r5', trim($db["path"],"/"));
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('nlwrhgqstudyuz', $db["user"]);
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('bNAwzn5POFki4QyOw7rKvkKNQU', $db["pass"]);
 
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('ec2-54-243-245-58.compute-1.amazonaws.com', $db["host"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -45,14 +45,16 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'Z}^%rWFkNPV6Ng4]C;yf9BFZA5yM3?)(K-:8/0mQ+K4)RM]!$q9&><)?Xk{ k_Is');
+define('SECURE_AUTH_KEY',  '{E5Hn%Be$/5dg[U26%)S2-S>m[_)K|<t`qlI[2+6X@hGh1](Ot[-#~]J5[:d=mN9');
+define('LOGGED_IN_KEY',    'd%PuF8GnQ6Hu7 /i@GD.v8;~6iyKJ^76}{pmJ=8<ZXY/WQEY8W=<2_+`kLyff]V,');
+define('NONCE_KEY',        'dwLf1g+e=[+CVzw7EGmA+Uq.}-(DVp@A6[_+B+BXBPohQm6)Y#HE+Z$!1(L+x|4|');
+define('AUTH_SALT',        '`-Z!2~hE&y9o=[RD9T3:27S/z-}&CC=0u#P_J/T0Q[Z{!eQ%k_:.tD#tU0Ah|ZS5');
+define('SECURE_AUTH_SALT', 'UrSYPK*~]ED=%x|+1>8~a[8YeM5U&[SmQh+1c?XHZD^]5[#2-$;M~$dw]QTK!N_|');
+define('LOGGED_IN_SALT',   '[}X?GH1}(`L%O[qms6!voSe=>0i-BL0Uf2jISxT`WxgJynR:///@<*!:qICQkb3&');
+define('NONCE_SALT',       '(X?)F$B>-*ZX8[#y,eVi}]ct[<v.90c!lW+Fg!d<>N5rpG-`~8QRhx^cst  f9/4');
+define('AWS_ACCESS_KEY_ID',     getenv('AWS_ACCESS_KEY_ID'));
+define('AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY'));
 
 /**#@-*/
 
